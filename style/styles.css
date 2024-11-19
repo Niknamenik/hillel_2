@@ -557,7 +557,7 @@ body{
         max-height: 350px;
     }
 }
-@media screen and (max-width: 1439px){  
+@media screen and (max-width: 1439px){
     .conteiner{
         min-width: 904px;
     }
