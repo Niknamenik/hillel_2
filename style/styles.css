@@ -16,17 +16,19 @@ body{
     width: 84.333%;
     margin: 0 auto;
     max-width: 1600px;
+    min-width: 1320px;
 
 }   
 .header{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-left: 8.333%;
-    padding-right: 8.333%;
+    top: 50px;
     position: absolute;
+    min-width: 1320px;
     width: 83.333%;
     z-index: 10 ;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .header_right_side{
     font-weight: 700;
@@ -41,6 +43,12 @@ body{
 }
 .header_right_side a{
     color: #fff;
+}
+.lng{
+    display: flex;
+}
+.checked_lng:checked{
+    background-color: #F0145A;
 }
 .lng button{
     font-weight: 700;
@@ -57,6 +65,9 @@ body{
     transition: 0.4s ease;
 }
 .lng button:hover{
+    background-color: #F0145A;
+}
+.lng button:focus{
     background-color: #F0145A;
 }
 .right_top span{
@@ -96,10 +107,12 @@ body{
     color: #fff;
     position: relative;
 }
-.h-symbol{
-    position: absolute;
-    top: 0;
-    z-index: 0;
+.symbol{
+    width: 46.4%;
+    min-width: 697px;
+}
+.symbol svg{
+    width: 100%;
 }
 .hero_section button{
     background: none;
@@ -117,7 +130,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     max-height: 1000px;
 }
 .hero_section div h2{
@@ -126,6 +138,8 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }
 .hero_section button:hover{
@@ -142,6 +156,7 @@ body{
     display: flex;
     width: 70.833%;
     max-width: 1360px;
+    min-width: 1080px;
 }
 .strengths hr{
     margin: 0 4.4%;
@@ -267,12 +282,15 @@ body{
 }
 .team{
     display: flex;
+    min-height: 300px;
 }
 .team_info{
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 30px;
-    border-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
     background-color: #F5F5FA;
 }
 .team_info a{
@@ -511,19 +529,52 @@ body{
 }
 .for_bg{
     background: linear-gradient(-135deg, #323264, #323264, #7A425E);
-}
-.hero_section_conteiner{
-    background: url(../img/Symbol.svg)50% no-repeat;
-}
+    background-size:100%;
+}   
 .slider{
     max-width: 1600px;
-    width: 100%;
-    padding: 60px 0 30px 0;
+    width: 91.7%;
+    margin-top: 60px;
+    margin-bottom: 30px;
     overflow: hidden;
+    min-width: 1320px;
 }
 .slider-line{
     width: 300%;
     display: flex;
     position: relative;
     transition: 1s ease;
+}
+@media screen and (max-width: 1440px) {
+    .partners{
+        min-width: 0;
+        width: 100%;
+    }
+    .partners_items{
+        border-radius: 0;
+    }
+    .team{
+        max-height: 350px;
+    }
+}
+@media screen and (max-width: 1439px){  
+    .conteiner{
+        min-width: 904px;
+    }
+    .symbol{
+        min-width: 670px;
+    }
+    .header{
+        min-width: 904px;
+    }
+    .team{
+        max-height: 528px;
+        min-width: 904px;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    .team{
+        min-width: 904px;
+    }
 }
