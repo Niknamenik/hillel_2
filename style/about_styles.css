@@ -21,24 +21,19 @@ body {
 }
 
 .conteiner {
-  width: 68.75%;
+  width: 100%;
   margin: 0 auto;
-  max-width: 1320px;
-  min-width: 1080px;
+  max-width: 1360px;
+  min-width: 1200px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  top: 50px;
-  position: absolute;
   min-width: 1320px;
   width: 100%;
-  max-width: 1560px;
-  margin: 0 60px;
-  z-index: 10;
-  left: 50%;
-  transform: translate(-50%);
+  max-width: 1600px;
+  margin: 50px auto;
 }
 .header .lil-logo {
   display: none;
@@ -136,7 +131,7 @@ body {
 }
 
 .hero_section_conteiener {
-  margin-top: 170px;
+  margin-top: 60px;
   display: flex;
   gap: 30px;
   margin-bottom: 60px;
@@ -208,5 +203,90 @@ body {
   text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
   width: 100%;
 }
+.quality_conteiner{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.quality_conteiner article{
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
+}
+.quality_conteiner h2{
+  max-width: 362px;
+}
+.achievements_conteiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.achievements{
+  background-color: #F5F5FA;
+}
+.achievements h3{
+  text-transform: uppercase;
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 30px;
+}
+.slider{
+  width: 100%;
+  max-width: 1600px;
+}
+.slider-line{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.slider_item{
+  height: 110px;
+  width: 23.125%;
+  background: #fff;
+  border-radius: 12px;
+  position: relative;
+}
+.slider_item img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide_btns{
+  display: flex;
+  gap: 14px;
+}
+.slide_btns button{
+  width: 16px;
+  height: 16px;
+  background: #24A3FF;
+  border: none;
+  border-radius: 12px;
+  opacity: 0.2;
+  transition: 0.4s ease;
+}
+.slide_btns button:hover{
+  opacity: 0.6;
+}
+.slide_btns button:focus{
+  opacity: 1;
+}
 
+.slide_4, .slide_5, .slide_6{
+  display: none;
+}
+.achievements_conteiner hr{
+  width: 100%;
+  max-width: 1600px;
+}
 /*# sourceMappingURL=about_styles.css.map */
