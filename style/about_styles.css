@@ -471,7 +471,8 @@ body {
 }
 @media screen and (max-width:600px) {
   .conteiner{
-    margin: 0 15px 30px 15px;
+    margin: 0 30px 30px 30px;
+    width: calc(100% - 60px);
   }
   .header{
     width:100%;
@@ -590,6 +591,51 @@ body {
   .lil-logo input:checked ~ .burger-menu{
       background: rgba(230, 230, 240, 0.5);
   }
+  .team_img{
+    margin-bottom: 30px;
+  }
+  .team_text h1 {
+    font-size: 36px;
+    line-height: 43.88px;
+    letter-spacing: 13px;
+    left: 52%;
+  }
+  .title{
+    font-size: 30px;
+    line-height: 36.57px;
+  }
+  .achievements .achievements_conteiner .slide_btns button{
+    display: block;
+  }
+  .achievements .achievements_conteiner .slider .slider-line {
+    width: 679%;
+    justify-content: flex-start;
+  }
+  .achievements .achievements_conteiner .slider {
+    width: 255px;
+  }
+  .achievements .achievements_conteiner .slider .slider-line .slider_item{
+    max-width: 255px;
+    width: 100%;
+  }
+  .achievements .achievements_conteiner .slider .slider-line .slider_item img {
+    width: auto;
+  }
+  .footer span{
+    display: none;
+  }
+  .footer_address{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer_number{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .footer_conteiner {
+    width: 100%;
+  }
+
 }
 
 /*# sourceMappingURL=about_styles.css.map */
