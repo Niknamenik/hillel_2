@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header conteiner">
             <div class="logo">
                 <svg width="318" height="60" viewBox="0 0 318 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_158160_1750)">
@@ -60,13 +60,11 @@
                     <input type="checkbox" id="menuCheckBox">
                     <div class="burger-menu">
                         <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 10.5H25" stroke="white" stroke-width="2"/>
-                                <path d="M7 16.5H25" stroke="white" stroke-width="2"/>
-                                <path d="M7 22.5H25" stroke="white" stroke-width="2"/>
+                               <use href="./images/sprite.svg#burger_menu_icon" x="0" y="0"></use>
                         </svg>
                     </div>
                     <ul class="right_bottom" id="menu_hided">
-                        <li><a href="#">about us</a></li>
+                        <li><a class="current-text" href="#">about us</a></li>
                         <li><a href="#">services</a></li>
                         <li><a href="#">team</a></li>
                         <li><a href="#">publications</a></li>
@@ -74,7 +72,7 @@
                     </ul>
                 </div>
                 <ul class="right_bottom" id="menu">
-                    <li><a href="#">about us</a></li>
+                    <li><a class="current-text" href="#">about us</a></li>
                     <li><a href="#">services</a></li>
                     <li><a href="#">team</a></li>
                     <li><a href="#">publications</a></li>
@@ -85,7 +83,7 @@
     </header>
     <main>
         <section class="hero_section">
-            <div class="hero_section_conteiener conteiner">
+            <div class="hero_section_conteiner conteiner">
                 <div class="idea">
                     <h2 class="title">We turn over the idea of legal services</h2>
                     <article>Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.
@@ -122,7 +120,7 @@
         </section>
         <section class="team_img">
             <img src="./images/TEAM.jpg" alt="team img">
-            <div class="team_text conteiner"><h1>TEAM</h1></div>
+            <div class="team_text"><h1>TEAM</h1></div>
         </section>
         <section class="quality">
             <div class="quality_conteiner conteiner">
@@ -135,11 +133,11 @@
             </div>
         </section> 
     </main>
-    <section class="achievements_conteiner">
-        <div class="achievements">
+    <section class="achievements">
+        <div class="achievements_conteiner conteiner">
             <h3>achievements</h3>
             <div class="slider">
-                <div class="slider-line">
+                <div class="slider-line" style="left: 0px;">
                     <div class="slider_item">
                         <img src="./images/Achievment-1.jpg" alt="the legal 500">
                     </div>
@@ -171,36 +169,27 @@
             <hr>
         </div>
     </section>
-    <footer class="footer_conteiner">
-        <div class="footer conteiner">
-            <div class="footer_info">
-                <div class="footer_left">
-                    <div class="footer_address">
-                        <p>Kyiv, Mechnikova str, 14/1</p>
-                        <span></span>
-                        <a href="#">ON MAP</a>
-                    </div>
-                    <div class="footer_number">
-                        <a href="#">
-                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_157704_1794)">
-                                <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_157704_1794">
-                                <rect width="38" height="38" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                        <span></span>
-                        <p>0800 211 927</p>
-                        <span></span>
-                        <a href="#">contact@forstudy.space</a>
-                    </div>
+    <footer class="footer">
+        <div class="footer_conteiner conteiner">
+            <div class="footer_left">
+                <div class="footer_address">
+                    <p>Kyiv, Mechnikova str, 14/1</p>
+                    <span></span>
+                    <a href="#">ON MAP</a>
                 </div>
-                <p class="LLC">© 2021 HLEGAL Law company, LLC</p>
+                <div class="footer_number">
+                    <a href="#">
+                        <svg class="footer_facebook_icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/sprite.svg#footer_facebook" x="0" y="0"></use>
+                        </svg>
+                    </a>
+                    <span></span>
+                    <p>0800 211 927</p>
+                    <span></span>
+                    <a href="#">contact@forstudy.space</a>
+                </div>
             </div>
+            <p class="LLC">© 2021 HLEGAL Law company, LLC</p>
         </div>
     </footer>
     <script src="./script/script_for_about_us.js"></script>

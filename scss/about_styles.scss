@@ -16,19 +16,11 @@ html {
 body{
     font-family: "Montserrat", sans-serif;
 }
-.conteiner{
-    width: 68.75%;
-    margin: 0 auto;
-    max-width: 1320px;
-    min-width: 1080px;
-
-}
 .header{
     display: flex;
     justify-content: space-between;
     min-width: 1320px;
-    width: 100%;
-    max-width: 1600px;
+    width: 85%;
     margin: 50px auto;
     .lil-logo{
         display:none;
@@ -110,13 +102,16 @@ body{
                 color: #24A3FF;
                 transition: 0.4s ease;
             }
-             a:hover{
+            a:hover{
                 border-color: #24A3FF;
             }
-             a:focus{
+            a:active{
                 color: #F0145A;
                 border-color: #F0145A;
             }
+            li:first-of-type a{
+                color: #F0145A;
+                border-color: #F0145A;}
         }
     }
 }
@@ -128,24 +123,25 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hero_section_conteiener{
+.hero_section_conteiner{
+    margin: auto;
+    width: 71%;
     margin-top: 170px;
     display: flex;
     gap: 30px;
     margin-bottom: 60px;
+    min-width: 1080px;
 
     .idea{
         display: flex;
         flex-direction: column;
         gap: 28px;
-        width: 71.363%;
-        max-width: 942px;
-        min-width: 662px;
+        width: 75%;
 
         article{
             font-size: 19px;
             font-weight: 400;
-            line-height: 30px   ;
+            line-height: 30px;
         }
     }
     .advantages{
@@ -157,6 +153,7 @@ body{
             display: flex;
             flex-direction: column;
             gap: 40px;
+            width: 354px;
 
             .advantages_item{
                 h2{
@@ -194,7 +191,7 @@ body{
     }
     h1{
         position: absolute;
-        left: 50%;
+        left: 51.5%;
         top: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -205,15 +202,18 @@ body{
         color: #FFFFFF;
         opacity: 0.8;
         text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
-        width: 100%;
+        width:fit-content;
     }
 }  
 .quality_conteiner{
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    width: 71%;
     margin-top: 60px;
     gap: 60px;
     margin-bottom: 60px;
+    min-width: 1086px;
 
     article{
         font-size: 19px;
@@ -225,15 +225,18 @@ body{
         max-width: 362px;
       }
 }
-.achievements_conteiner{
+.achievements{
     background-color: #F5F5FA;
 
-    .achievements{
+    .achievements_conteiner{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
+        width: 85%;
+        margin: 0 auto;
+        min-width: 1320px;
     
         h3{
             text-transform: uppercase;
@@ -264,13 +267,13 @@ body{
                     width: 23.125%;
                     background: #fff;
                     border-radius: 12px;
-                    position: relative;
     
                     img{
-                        position: absolute;
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
+                        position: relative;
+                        
                       }
                   }
               }
@@ -311,65 +314,199 @@ body{
 
   }
   
-.footer_conteiner{
+.footer{
     background-color: #F5F5FA;
 
-    .footer{
+    .footer_conteiner{
         padding:30px 0;
-
-        .footer_info{
-            display: flex;
-            justify-content: space-between;
+        width: 84%;
+        min-width: 1320px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
             
-            .footer_left{
+        .footer_left{
+            display: flex;
+            flex-direction: column;
+            row-gap: 21px;
+        
+            div{
                 display: flex;
-                flex-direction: column;
-                row-gap: 21px;
-
-                a:hover{
-                    color: #F0145A;
-                }
-                a:hover svg path{
-                    color: #F0145A;
-                    fill: #F0145A;
-                }
-
-                div{
-                    display: flex;
-                    align-items: center;
-                    column-gap: 10px;
-                }
-                .footer_address p{
-                    color: #323264;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 19.5px;
-                }
-                span{
-                    width: 6px;
-                    height: 6px;
-                    background: #B3B3BA;
-                    border-radius: 10px;
-                }
-                .footer_number{
-                    color: #46466E;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19.5px;
-
-                    a{
-                        color: #24A3FF;
-                    }
-                }
+                align-items: center;
+                column-gap: 10px;
             }
-            .LLC{
-                color: #B3B3BA;
+            .footer_address {
+                p{
+                color: #323264;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 19.5px;
-                text-align: right;
+                }
+                a{
+                    color: #24A3FF;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14.63px;
+                    letter-spacing: 1px;
+                    transition: 0.3s ease;
+                }
+                a:hover{
+                    color: #F0145A;
+                }
+            }
+            span{
+                width: 6px;
+                height: 6px;
+                background: #B3B3BA;
+                border-radius: 10px;
+            }
+            .footer_number{
+                color: #46466E;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19.5px;
+
+                a{
+                    color: #24A3FF;
+                    transition: 0.3s ease;
+                }
+                a:hover{
+                    color: #F0145A;
+                }
+                .footer_facebook_icon{
+                    fill: #24A3FF;
+                    transition: 0.3s ease-in;
+                }
+                .footer_facebook_icon:hover{
+                    fill: #F0145A;
+                }
+            }
+        }
+        .LLC{
+            color: #B3B3BA;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.5px;
+            text-align: right;
+        }
+            
+    }
+    
+}
+@media screen and (max-width:1440px){
+    .team_text{
+        h1{
+            left: 52.5%;
+        }
+    }
+}
+@media screen and (max-width:1439px) {
+    .conteiner{
+        margin:0 60px 60px 60px;
+        width: calc(100% - 120px);
+        min-width: 0;
+    }
+    .achievements .achievements_conteiner{
+        min-width: 0;
+        width: calc(100% - 120px);
+        margin: 0 60px;
+    }
+    .footer .footer_conteiner{
+        min-width: 0;
+        width: calc(100% - 120px);
+        margin: 0 60px;
+    }
+    .header{
+        margin-top: 50px;
+    }
+    .quality_conteiner{
+        margin-top: 60px;
+    }
+    .team_text h1{
+        font-size: 86px;
+        line-height: 105px;
+        letter-spacing: 63px;
+        left: 53%;
+    }
+}   
+@media screen and (max-width:950px){
+    .title{
+        width: 100%;
+    }
+    .header{
+        flex-direction: column-reverse;
+        margin-bottom: 95px;
+        .header_right_side{
+
+            .right_bottom{
+                justify-content: flex-start;
+                position: absolute;
+                width: fit-content;
+                top: 185px;
+            }
+        }
+        .logo{
+            margin: 30px 0;
+        }
+    }
+    .team_text{
+            h1{
+                font-size: 46px;
+                line-height: 56px;
+                left: 54%;
+            }
+    }
+    .hero_section_conteiner{
+        flex-direction: column;
+        .idea{
+            width: 100%;
+        }
+        .advantages{
+            width: 100%;
+
+            .advantages_items{
+                width: 100%;
             }
         }
     }
+    .quality_conteiner{
+        flex-direction: column;
+        h2{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .footer .footer_conteiner   {
+        max-width: 398px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        margin: 0 auto;
+        .LLC{
+            text-align: center;
+        }
+    }
+    .achievements{
+        .achievements_conteiner{
+            .slider{
+                .slider-line{
+                    .slider_item{
+                        height: 90px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .slider_item:first-child{
+                        img{
+                            width: auto
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
     
 }
