@@ -823,7 +823,7 @@ body{
         background-color: rgba(245, 245, 250, 1);
         border-radius: 12px;
         max-width: 620px;
-        min-width: 335px;
+        min-width: 0;
         padding: 7px 0;
         text-align: center;
     }

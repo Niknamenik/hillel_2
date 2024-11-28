@@ -637,5 +637,12 @@ body {
   }
 
 }
+@media screen and (max-width:300px) {
+  .conteiner{
+    margin: 0 10px 20px 10px;
+    width: calc(100% - 20px);
+    min-width: 255px;
+  }
+} 
 
 /*# sourceMappingURL=about_styles.css.map */
