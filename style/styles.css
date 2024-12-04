@@ -453,10 +453,6 @@ body{
     color: #24A3FF;
     padding: 15px 30px;
 }
-.top{
-    display: flex;
-    gap: 60px;
-}
 .date{
     font-weight: 700;
     font-size: 12px;

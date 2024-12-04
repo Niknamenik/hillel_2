@@ -507,7 +507,6 @@ body {
   }
   .right_top span, .address, .facebook{
       display: none;
-
   }
   .header .header_right_side  .right_bottom{
     display: flex;
