@@ -93,6 +93,9 @@ p {
 .header .header_right_side .right_top .phone_numer {
   color: #B3B3BA;
 }
+.header .header_right_side .right_top .facebook {
+  height: 28px;
+}
 .header .header_right_side .right_top .facebook_svg {
   fill: #B3B3BA;
   transition: 0.3s ease-out;
